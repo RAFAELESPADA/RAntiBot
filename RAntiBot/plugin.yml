@@ -1,0 +1,9 @@
+name: RAntiBot
+version: 4.0-BUILD04
+description: A Simple AntiBot plugin that are more effective than the most of others AntiBot plugins and works with a simple method of detection
+author: zEnderX5_ , Rafael Auler
+website: http://bit.ly/2kC345B
+main: me.rafaelauler.antibot.Main.Main
+commands:
+   rantibot:
+        description: Main Command

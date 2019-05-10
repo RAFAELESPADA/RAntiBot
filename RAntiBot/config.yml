@@ -1,0 +1,22 @@
+#Plugin RAntiBot version BUILD-03 config
+#Author: zEnderX5_ , Rafael Auler
+#Subscribe to my channel: http://bit.ly/2kC345B
+#Here you can customize the messages and some things
+#Enjoy the plugin and dont forget to rate a 5 star review =)
+
+#Time in minutes that the antibot data will be reset
+#Every x minutes the antibot removes all player data and all players that dont have
+#The permission rantibot.bypass will be asked to complete the antibot task again
+#Default: 30 minutes
+
+Interval: 30
+
+#Message that appear when player try join the server first time
+MessageKick: '&e&l[AntiBot] &cYour connection has been verified. &aPlease reconnect'
+
+ # Enable sending your server address to bStats? This could get you a couple more players. =)
+ # Defaults to true
+SendIPAddressData: true 
+
+#Message that appear when player join the server and dont have moved yet
+MustSneakToTalk: '&e&l[AntiBot] &cYou must sneak in order to chat (Press Shift)'
