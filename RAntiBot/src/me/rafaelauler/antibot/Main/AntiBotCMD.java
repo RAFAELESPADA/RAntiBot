@@ -22,8 +22,8 @@ public class AntiBotCMD implements CommandExecutor {
 	/*  93 */       if (args.length == 0)
 	/*     */       {
 
-	/* 106 */         sender.sendMessage(ChatColor.DARK_AQUA + "§m-----------" + ChatColor.AQUA + " RAntiBot COMMANDS " + ChatColor.DARK_AQUA + ChatColor.STRIKETHROUGH + "-------------");
-	/* 107 */         sender.sendMessage(ChatColor.DARK_AQUA + "§eCreated by zEnderX5_");
+	/* 106 */         sender.sendMessage(ChatColor.DARK_AQUA + "Â§m-----------" + ChatColor.AQUA + " RAntiBot COMMANDS " + ChatColor.DARK_AQUA + ChatColor.STRIKETHROUGH + "-------------");
+	/* 107 */         sender.sendMessage(ChatColor.DARK_AQUA + "Â§eCreated by zEnderX5_");
 	/* 108 */         sender.sendMessage("");
 	/* 109 */         sender.sendMessage(ChatColor.DARK_AQUA + " - " + ChatColor.AQUA + "/rantibot" + ChatColor.DARK_AQUA + " - " + ChatColor.GRAY + "Display this help page");
 	/* 110 */         sender.sendMessage(ChatColor.DARK_AQUA + " - " + ChatColor.AQUA + "/rantibot " + ChatColor.GREEN + "info" + ChatColor.DARK_AQUA + " - " + ChatColor.GRAY + "Display plugin info!");
@@ -36,15 +36,15 @@ public class AntiBotCMD implements CommandExecutor {
 	/*     */       }
 /*  93 */       if (args[0].equalsIgnoreCase("info"))
 {
-	/* 27 */       sender.sendMessage("§2§lCREDITS §f§lAND §e§lINFORMATION");
-	/* 28 */       sender.sendMessage("§6\u279C §cPlugin Name: §eRAntiBot");
-	/* 29 */       sender.sendMessage("§6\u279C §cPlugin Version: §eBUILD-4");
-	/* 30 */       sender.sendMessage("§6\u279C §cAuthor: §ezEnderX5_ , Rafael Auler");
-	/* 31 */       sender.sendMessage("§6\u279C §cAuthor Channel: http://bit.ly/2kC345B");
-	/* 32 */       sender.sendMessage("§6\u279C §cSpigot Profile: http://bit.ly/2j5qvnM");
-	/* 34 */       sender.sendMessage("§cThanks for use this plugin i really appreaciate IT");
-	/* 35 */       sender.sendMessage("§cIf you like it consider giving a §e§l\u2605\u2605\u2605\u2605\u2605 §cReview");
-	/* 36 */       sender.sendMessage("§cPS: §eSubscribe to my channel and follow me on Spigot Thanks! §9§l=)");
+	/* 27 */       sender.sendMessage("Â§2Â§lCREDITS Â§fÂ§lAND Â§eÂ§lINFORMATION");
+	/* 28 */       sender.sendMessage("Â§6\u279C Â§cPlugin Name: Â§eRAntiBot");
+	/* 29 */       sender.sendMessage("Â§6\u279C Â§cPlugin Version: Â§eBUILD-5");
+	/* 30 */       sender.sendMessage("Â§6\u279C Â§cAuthor: Â§ezEnderX5_ , Rafael Auler");
+	/* 31 */       sender.sendMessage("Â§6\u279C Â§cAuthor Channel: http://bit.ly/2kC345B");
+	/* 32 */       sender.sendMessage("Â§6\u279C Â§cSpigot Profile: http://bit.ly/2j5qvnM");
+	/* 34 */       sender.sendMessage("Â§cThanks for use this plugin i really appreaciate IT");
+	/* 35 */       sender.sendMessage("Â§cIf you like it consider giving a Â§eÂ§l\u2605\u2605\u2605\u2605\u2605 Â§cReview");
+	/* 36 */       sender.sendMessage("Â§cPS: Â§eSubscribe to my channel and follow me on Spigot Thanks! Â§9Â§l=)");
 	 return true;
 		/*     */       }
 /*  93 */       if (args[0].equalsIgnoreCase("reload"))
@@ -52,7 +52,7 @@ public class AntiBotCMD implements CommandExecutor {
 
 	if (!sender.hasPermission("rantibot.reload")) {
 		Player p = (Player)sender;
-		/* 31 */         p.sendMessage("§b[RAntiBot] §cYou dont have permission!");
+		/* 31 */         p.sendMessage("Â§b[RAntiBot] Â§cYou dont have permission!");
 		/* 32 */         
 		/* 33 */         return true;
 		/*    */       }
@@ -61,7 +61,7 @@ public class AntiBotCMD implements CommandExecutor {
 		/* 37 */       plugin.reloadConfig();
 		/* 38 */       p.getServer().getPluginManager().disablePlugin(plugin);
 		/* 39 */       p.getServer().getPluginManager().enablePlugin(plugin);
-		/* 40 */        p.sendMessage("§b[RAntiBot] §eThe config has been sucefully reloaded!");
+		/* 40 */        p.sendMessage("Â§b[RAntiBot] Â§eThe config has been sucefully reloaded!");
 
 /* 102 */         return true;
 /*     */       }
@@ -70,19 +70,19 @@ public class AntiBotCMD implements CommandExecutor {
 
 	if (!sender.hasPermission("rantibot.reset")) {
 		Player p = (Player)sender;
-		/* 31 */         p.sendMessage("§b[RAntiBot] §cYou dont have permission!");
+		/* 31 */         p.sendMessage("Â§b[RAntiBot] Â§cYou dont have permission!");
 		/* 32 */         
 		/* 33 */         return true;
 		/*    */       }
 	if (!JoinListener.canplay.isEmpty()) {
 		JoinListener.canplay.remove(String.valueOf(JoinListener.canplay.size()));
-		sender.sendMessage("§b[RAntiBot] §eYou reset all antibot data!");
-		sender.sendMessage("§b[RAntiBot] §eNow all players that dont have the");
-		sender.sendMessage("§b[RAntiBot] §ePermission antibot.bypass");
-		sender.sendMessage("§b[RAntiBot] §eMust be verified by the antibot again");
-		Bukkit.getConsoleSender().sendMessage("§b[RAntiBot] §eThe player data has been reseted by " + sender.getName() + "!");
+		sender.sendMessage("Â§b[RAntiBot] Â§eYou reset all antibot data!");
+		sender.sendMessage("Â§b[RAntiBot] Â§eNow all players that dont have the");
+		sender.sendMessage("Â§b[RAntiBot] Â§ePermission antibot.bypass");
+		sender.sendMessage("Â§b[RAntiBot] Â§eMust be verified by the antibot again");
+		Bukkit.getConsoleSender().sendMessage("Â§b[RAntiBot] Â§eThe player data has been reseted by " + sender.getName() + "!");
 	} else {
-		sender.sendMessage("§b[RAntiBot] §cDont exists any data to remove!");
+		sender.sendMessage("Â§b[RAntiBot] Â§cDont exists any data to remove!");
 	}
 /* 102 */         return true;
 /*     */       }
