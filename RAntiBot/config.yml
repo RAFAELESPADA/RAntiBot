@@ -7,12 +7,17 @@
 #Time in minutes that the antibot data will be reset
 #Every x minutes the antibot removes all player data and all players that dont have
 #The permission rantibot.bypass will be asked to complete the antibot task again
-#Default: 30 minutes
+#Default: 120 minutes (2 hours)
 
-Interval: 30
+Interval: 120
 
 #Message that appear when player try join the server first time
 MessageKick: '&e&l[AntiBot] &cYour connection has been verified. &aPlease reconnect'
+
+#When player join the server he must sneak in 15 seconds or he will be kicked
+KickedBecauseNotSneak: '&e&l[AntiBot] &cYou have been kicked because you dont sneak. &bRelog again an sneak'
+
+MessageRememberToSneak: '&e&l[AntiBot] &cYou need to sneak or you will be kicked in 15 seconds'
 
  # Enable sending your server address to bStats? This could get you a couple more players. =)
  # Defaults to true
