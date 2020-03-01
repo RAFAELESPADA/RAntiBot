@@ -31,9 +31,10 @@ public class JoinListener implements Listener {
 /*     */   Player p = e.getPlayer();
 if (!canplay.contains(p.getName()) && !p.hasPermission("antibot.bypass"))
 {
-	e.setKickMessage(this.main.getConfig().getString("MessageKick").replace("&", "§"));
-	e.disallow(PlayerLoginEvent.Result.KICK_OTHER, (this.main.getConfig().getString("MessageKick").replace("&", "§")));
+	e.setKickMessage(this.main.getConfig().getString("MessageKick").replace("&", "Â§"));
+	e.disallow(PlayerLoginEvent.Result.KICK_OTHER, (this.main.getConfig().getString("MessageKick").replace("&", "Â§")));
 canplay.add(p.getName());
+MoveEvent.move.remove(p.getName());
 Bukkit.getScheduler().scheduleSyncDelayedTask(Main.plugin, new Runnable()
 /*     */         {
 public void run()
@@ -41,11 +42,12 @@ public void run()
 /*     */           {
 	if (!JoinListener.canplay.isEmpty()) {
 /* 165 */             JoinListener.canplay.remove(String.valueOf(JoinListener.canplay.size()));
-Bukkit.getConsoleSender().sendMessage("§b[RAntiBot] §eThe player data has been reseted!");
+Bukkit.getConsoleSender().sendMessage("Â§b[RAntiBot] Â§eThe player data has been reseted!");
 /*     */           }
 /* 167 */         }}, 20 * 60 * this.main.getConfig().getInt(("Interval")));
 /*     */       }
 }
 }
+
 
 
