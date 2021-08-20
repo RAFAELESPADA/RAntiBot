@@ -19,8 +19,8 @@ KickedBecauseNotSneak: '&e&l[AntiBot] &cYou have been kicked because you dont sn
 
 MessageRememberToSneak: '&e&l[AntiBot] &cYou need to sneak or you will be kicked in 15 seconds'
 
- # Enable sending your server address to bStats? This could get you a couple more players. =)
- # Defaults to true
+#Enable sending your server address to bStats? This could get you a couple more players. =)
+#Defaults to true
 SendIPAddressData: true 
 
 #Message that appear when player join the server and dont have moved yet
